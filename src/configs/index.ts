@@ -35,9 +35,14 @@ injectable(ConfigModules.ConfigRules, [],
     { key: 'AMQP_PORT', path: ['amqp', 'port'] },
     { key: 'AMQP_LOGIN', path: ['amqp', 'login']  },
     { key: 'AMQP_PASSWORD', path: ['amqp', 'password'] },
-    { key: 'FCM_PRIVKEY_PATH', path: ['fcm', 'privKeyPath']},
-    { key: 'TOPIC_DEVICE_QUEUE', path: ['topic', 'deviceQueue'] },
-    { key: 'TOPIC_FIREBASE_MESSAGE_QUEUE', path: ['topic', 'firebaseMessageQueue'] }
+    { key: 'TOPIC_MATCH_COMMAND_QUEUE', path: ['topic', 'matchCommandQueue'] },
+    { key: 'MYSQL_HOST', path: ['mysql', 'host'] },
+    { key: 'MYSQL_PORT', path: ['mysql', 'port'] },
+    { key: 'MYSQL_USER', path: ['mysql', 'user'] },
+    { key: 'MYSQL_PASSWORD', path: ['mysql', 'password'] },
+    { key: 'MYSQL_DATABASE', path: ['mysql', 'database'] },
+    { key: 'MYSQL_CONNECTION_LIMIT', path: ['mysql', 'connectionLimit'], defaultValue: 10 },
+    { key: 'EXTAPI_MESSAGE_URI', path: ['extapi', 'messageBaseUri'] }
   ]));
 
 injectable(ConfigModules.ConfigSource,
