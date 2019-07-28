@@ -1,0 +1,42 @@
+{
+  "name": "chatpot-roulette-matcher",
+  "version": "1.0.0",
+  "description": "c",
+  "main": "index.js",
+  "scripts": {
+    "dev": "CONFIG_FILE=$HOME/chatpot-roulette-matcher-conf.json TS_NODE_FILES=true nodemon --watch ./src -e ts --exec ts-node -- --project ./tsconfig.json ./src/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayJayDee/Chatpot-Roulette-Matcher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JayJayDee/Chatpot-Roulette-Matcher/issues"
+  },
+  "homepage": "https://github.com/JayJayDee/Chatpot-Roulette-Matcher#readme",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "bsonfy": "^1.0.2",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "smart-factory": "^1.0.12"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.5.13",
+    "@types/jest": "^24.0.15",
+    "@types/lodash": "^4.14.136",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^12.6.8",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslib": "^1.10.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
