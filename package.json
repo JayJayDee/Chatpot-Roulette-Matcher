@@ -22,7 +22,7 @@
   "dependencies": {
     "amqplib": "^0.5.3",
     "bsonfy": "^1.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.24.0",
     "smart-factory": "^1.0.12"
   },
